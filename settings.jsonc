@@ -7,9 +7,7 @@
   "explorer.confirmDelete": false,
   "git.autofetch": true,
   "git.confirmSync": false,
-  "cSpell.userWords": [
-    "millis"
-  ],
+  "cSpell.userWords": ["millis"],
   //Vim関連
   "vim.enableNeovim": true,
   "vim.easymotion": true,
@@ -19,66 +17,87 @@
   "vim.hlsearch": true,
   "vim.insertModeKeyBindings": [
     {
-      "before": [
-        "j",
-        "j"
-      ],
-      "after": [
-        "<Esc>"
-      ]
+      "before": ["j", "j"],
+      "after": ["<Esc>"]
     }
   ],
   "vim.leader": "<Space>",
   "vim.normalModeKeyBindingsNonRecursive": [
     {
-      "before": [
-        "<leader>",
-        "g",
-        "g",
-      ],
-      "commands": [
-        "lazygit.openLazygit"
-      ]
+      "before": ["<leader>", "g", "g"],
+      "commands": ["lazygit.openLazygit"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "f",
-      ],
-      "commands": [
-        "workbench.action.quickOpen"
-      ]
+      "before": ["<leader>", "f", "f"],
+      "commands": ["workbench.action.quickOpen"]
     },
     {
-      "before": [
-        "<leader>",
-        "f",
-        "c",
-      ],
-      "commands": [
-        "workbench.action.showCommands"
-      ]
+      "before": ["<leader>", "f", "c"],
+      "commands": ["workbench.action.showCommands"]
     },
     {
-      "before": [
-        "<leader>",
-        "y",
-        "p",
-      ],
-      "commands": [
-        "copyRelativeFilePath"
-      ]
+      "before": ["<leader>", "y", "p"],
+      "commands": ["copyRelativeFilePath"]
+    },
+    {
+      "before": [">"],
+      "after": [">", "g", "v"]
+    },
+    {
+      "before": ["<"],
+      "after": ["<", "g", "v"]
+    },
+    {
+      "before": ["<Leader>", "]", "e"],
+      "commands": ["editor.action.marker.nextInFiles"]
+    },
+    {
+      "before": ["<Leader>", "[", "e"],
+      "commands": ["editor.action.marker.prevInFiles"]
+    },
+    {
+      "before": ["<Leader>", "g", "d"],
+      "commands": ["editor.action.revealDefinition"]
+    },
+    {
+      "before": ["<Leader>", "c", "a"],
+      "commands": ["workbench.action.closeEditorsInGroup"]
+    },
+    {
+      "before": ["<Leader>", "c", "s"],
+      "commands": ["workbench.action.closeUnmodifiedEditors"]
+    },
+    {
+      "before": ["<Leader>", "a", "c"],
+      "commands": ["workbench.action.chat.open"]
+    },
+    {
+      "before": ["<Leader>", "a", "r"],
+      "commands": ["github.copilot.chat.review.stagedChanges"]
+    },
+    {
+      "before": ["<Leader>", "g", "b"],
+      "commands": ["workbench.action.navigateBack"]
+    },
+    {
+      "before": ["x"],
+      "after": ["\"", "_", "x"]
+    },
+    {
+      "before": ["d", "d"],
+      "after": ["\"", "_", "d", "d"]
     }
   ],
   "vim.handleKeys": {
     "<C-n>": false,
-    "<C-p>": false,
+    "<C-p>": false
   },
   "vim.statusBarColorControl": false,
   "vim.foldfix": true,
   // カーソル上にあるワードを"*"で検索
   "vim.visualstar": true,
+  "vim.showcmd": true,
+  "vim.replaceWithRegister": true,
   //Vimここまで
   "editor.accessibilitySupport": "on",
   "editor.inlineSuggest.enabled": true,
@@ -100,13 +119,6 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "editor.formatOnSave": true,
-  "workbench.colorCustomizations": {
-    "statusBar.background": "#8FBCBB",
-    "statusBar.noFolderBackground": "#8FBCBB",
-    "statusBar.debuggingBackground": "#8FBCBB",
-    "statusBar.foreground": "#434C5E",
-    "statusBar.debuggingForeground": "#434C5E"
-  },
   "extensions.experimental.affinity": {
     "asvetliakov.vscode-neovim": 1
   },
@@ -137,10 +149,36 @@
   "prisma.showPrismaDataPlatformNotification": false,
   "editor.acceptSuggestionOnCommitCharacter": false,
   "accessibility.signalOptions.volume": 0,
-  "terminal.integrated.commandsToSkipShell": [
-    "workbench.action.focusSideBar"
-  ],
+  "terminal.integrated.commandsToSkipShell": ["workbench.action.focusSideBar","workbench.files.action.focusFilesExplorer"],
   "diffEditor.renderSideBySide": false,
   "gitlens.ai.model": "vscode",
   "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+  "workbench.colorCustomizations": {
+    // インデントを色分けする設定
+    "editorIndentGuide.background1": "#b22222",
+    "editorIndentGuide.background2": "#ff4500",
+    "editorIndentGuide.background3": "#ffd700",
+    "editorIndentGuide.background4": "#228b22",
+    "editorIndentGuide.background5": "#000080",
+    "editorIndentGuide.background6": "#8b008b",
+    "editorIndentGuide.activeBackground1": "#fff",
+    "editorIndentGuide.activeBackground2": "#fff",
+    "editorIndentGuide.activeBackground3": "#fff",
+    "editorIndentGuide.activeBackground4": "#fff",
+    "editorIndentGuide.activeBackground5": "#fff",
+    "editorIndentGuide.activeBackground6": "#fff",
+    // statusBarの色の設定
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E",
+    "statusBar.debuggingForeground": "#434C5E"
+  },
+  "editor.stickyScroll.enabled": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "always",
+    "source.addMissingImports": "explicit",
+    "source.organizeImports": "explicit",
+    "source.removeUnusedImports": "explicit"
+  }
 }

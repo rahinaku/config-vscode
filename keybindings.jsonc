@@ -16,7 +16,7 @@
       "commands": [
         "workbench.action.focusFirstEditorGroup",
         "workbench.action.closeSidebar"
-      ],
+      ]
     },
     "when": "sideBarFocus"
   },
@@ -37,10 +37,7 @@
     "command": "runCommands",
     "when": "explorerViewletFocus && explorerViewletVisible && !explorerResourceIsFolder && !inputFocus",
     "args": {
-      "commands": [
-        "list.select",
-        "workbench.action.toggleSidebarVisibility",
-      ]
+      "commands": ["list.select", "workbench.action.toggleSidebarVisibility"]
     }
   },
   {
@@ -238,5 +235,16 @@
   {
     "key": "ctrl+w",
     "command": "-workbench.action.switchWindow"
+  },
+  // ctrl+[でインラインサジェスト非表示
+  {
+    "key": "ctrl+[",
+    "command": "editor.action.inlineSuggest.hide",
+    "when": "inlineEditIsVisible || inlineSuggestionVisible"
+  },
+  {
+    "key": "ctrl+[",
+    "command": "workbench.action.closeQuickOpen",
+    "when": "inQuickOpen"
   }
 ]
