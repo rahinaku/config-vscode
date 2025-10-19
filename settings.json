@@ -1,0 +1,146 @@
+{
+  "emmet.triggerExpansionOnTab": true,
+  "editor.tabCompletion": "on",
+  "editor.tabSize": 2,
+  "editor.stickyTabStops": true,
+  "editor.comments.insertSpace": false,
+  "explorer.confirmDelete": false,
+  "git.autofetch": true,
+  "git.confirmSync": false,
+  "cSpell.userWords": [
+    "millis"
+  ],
+  //Vim関連
+  "vim.enableNeovim": true,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.hlsearch": true,
+  "vim.insertModeKeyBindings": [
+    {
+      "before": [
+        "j",
+        "j"
+      ],
+      "after": [
+        "<Esc>"
+      ]
+    }
+  ],
+  "vim.leader": "<Space>",
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": [
+        "<leader>",
+        "g",
+        "g",
+      ],
+      "commands": [
+        "lazygit.openLazygit"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "f",
+      ],
+      "commands": [
+        "workbench.action.quickOpen"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "f",
+        "c",
+      ],
+      "commands": [
+        "workbench.action.showCommands"
+      ]
+    },
+    {
+      "before": [
+        "<leader>",
+        "y",
+        "p",
+      ],
+      "commands": [
+        "copyRelativeFilePath"
+      ]
+    }
+  ],
+  "vim.handleKeys": {
+    "<C-n>": false,
+    "<C-p>": false,
+  },
+  "vim.statusBarColorControl": false,
+  "vim.foldfix": true,
+  // カーソル上にあるワードを"*"で検索
+  "vim.visualstar": true,
+  //Vimここまで
+  "editor.accessibilitySupport": "on",
+  "editor.inlineSuggest.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "workbench.colorTheme": "Monokai",
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "cmake.configureOnOpen": true,
+  "[nginx]": {
+    "editor.defaultFormatter": "raynigon.nginx-formatter"
+  },
+  "accessibility.signals.lineHasError": {
+    "sound": "off"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "workbench.colorCustomizations": {
+    "statusBar.background": "#8FBCBB",
+    "statusBar.noFolderBackground": "#8FBCBB",
+    "statusBar.debuggingBackground": "#8FBCBB",
+    "statusBar.foreground": "#434C5E",
+    "statusBar.debuggingForeground": "#434C5E"
+  },
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "editor.fontFamily": "'Moralerspace Neon HWNF',Consolas, 'Courier New', monospace",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "accessibility.signals.lineHasInlineSuggestion": {
+    "sound": "off"
+  },
+  "accessibility.signals.lineHasWarning": {
+    "sound": "off"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "accessibility.signals.positionHasError": {
+    "sound": "off"
+  },
+  "accessibility.signals.terminalBell": {
+    "sound": "off"
+  },
+  "editor.minimap.enabled": false,
+  "workbench.iconTheme": "material-icon-theme",
+  "prisma.showPrismaDataPlatformNotification": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "accessibility.signalOptions.volume": 0,
+  "terminal.integrated.commandsToSkipShell": [
+    "workbench.action.focusSideBar"
+  ],
+  "diffEditor.renderSideBySide": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilot:gpt-4.1",
+}
